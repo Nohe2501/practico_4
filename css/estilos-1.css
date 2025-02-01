@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #e11364;
+
+}
+header{
+
+    background: #bc105c;
+    font-size: 20px;
+    color: white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    margin: 2% 10% 2% 10%;
+    text-align: center;
+
+}
+
+h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.juegos{
+
+    background: #bc105c;
+    color: white;
+    margin: 2% 10% 2% 10%;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+.contenido img{
+
+    width: 100%;
+    height: 30%;
+}
+.juego{
+
+    border-radius: 5px;
+    background: white;
+    color: rgba(0, 0, 0, 0.588);
+    margin: 30px 10px 30px 10px;
+    padding: 10px;
+}
+
+h2 {
+
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.3em;
+
+}
+
+h3{
+
+    text-align: right;
+    color: #9c0041;
+    border-bottom: 2px dotted #9c0041;
+    font-size: 1em;
+}
+
+p{
+    font-size: 12px;
+}
+
+.btn{
+
+    background: #2c8f20;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+    display: block;
+    width: fit-content;
+
+}
+
+footer{
+
+    background: #e96093;
+    font-size: 20px;
+    color: white;
+
+    margin: 1% 10% 1% 10%;
+    text-align: center;
+}
+
+footer p{
+    padding: 12px;
+}
+
+/* _________________________________________________________________________________________ */
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente línea si no caben */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 5px; /* Espacio entre imágenes */
+    margin: 5px auto;
+}
+
+.imagenes img {
+    /* margin: 5px; */
+    width: 380px;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid #000; 
+    gap: 5px;
+}
+
+.imagenes img:hover {
+    opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
+    transform: scale(1.1); /* Hace que la imagen se agrande un poco */
+    transition: all 0.3s ease;
+}
+
+.compra {
+    display: flex;
+    gap: 10px; /* Espaciado entre los botones */
+}
+
+
+
