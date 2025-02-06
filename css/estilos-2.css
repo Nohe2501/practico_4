@@ -7,66 +7,87 @@ body{
 header{
 
     background: linear-gradient(to left, #008B8B, #8A2BE2);
-    margin: 50px 100px 30px 100px;
-    border-radius: 30px;
-    padding: 10px;
+    margin: 20px 100px 15px 100px;
+    border-radius: 10px;
+    padding: 5px;
     color: whitesmoke;
     text-align: center;
 }
 
 h2{
-    color: white;
+    color: #8A2BE2;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    margin-bottom: auto;
+    border-radius: 10px;
+    opacity: 0.6;
 
 }
 
 h3{
     margin-left: 20px;
+    text-align: center;
+    font-size: 22px;
 }
 
 footer{
 
     background: #008B8B;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
-    padding: 5px;
-    margin: 1% auto auto auto;
+    padding: 1px;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
+    font-size: bold;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .juegos{
 
     background: linear-gradient(to right, #008B8B, #8A2BE2);
-    margin: 30px 100px 30px 100px;
-    display: flex;
+    margin: 10px 100px 20px 100px;
     color: white;
     border-radius: 20px;
-    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente línea si no caben */
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    gap: 5px; /* Espacio entre imágenes */
+    /* padding-bottom: 60px; */
+    /*flex-wrap: wrap;
+    justify-content:
+    gap: 5px;*/
+   
     
-    
+}
+
+.columna{
+    display: flex;
 }
 
 .juego{
 
-    margin: 10px 20px 20px 20px;
+    margin: 10px 20px 30px 20px;
+    width: 50%;
+    /* text-align: center; */
 
 }
 
 .contenido{
 
-    flex-direction: column;
-
+    flex-wrap: wrap; /*se visualiza el contenido en columnas */
+    text-align: justify; /*justifica el texto */
+    
 }
 
 .contenido img{
 
-    width: 40%;
+    width: 50%;
     height: auto;
     margin-left: 20px;
     margin-right: 20px;
     max-width: 100%;
-    border-radius: 30px 40%;
+    border-radius: 30px 30%;
+    display: block;
+    margin: 0 auto;
+    
 }
 
 .btn{
@@ -75,7 +96,9 @@ footer{
     border-radius: 100px;
     color: white;
     text-decoration: none;
-    text-align: center;
+    margin: 5px auto;
+    display: block;
+    width: fit-content;
 }
 
 .negrita{
@@ -84,4 +107,20 @@ footer{
     color: red;
     background: white;
     text-align: center;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagenhover:hover{
+    opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
+    transform: scale(1.2); /* Hace que la imagen se agrande un poco */
+    transition: all 0.5s ease;
+    border-radius: 30% 30PX;
+}
+
+.descripcion{
+    margin: 5% 2% 5% 2%;
 }
