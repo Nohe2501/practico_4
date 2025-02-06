@@ -49,44 +49,45 @@ footer{
     background: linear-gradient(to right, #008B8B, #8A2BE2);
     margin: 10px 100px 20px 100px;
     color: white;
-    border-radius: 20px;
-    /* padding-bottom: 60px; */
-    /*flex-wrap: wrap;
-    justify-content:
-    gap: 5px;*/
-   
+    border-radius: 20px;  
     
 }
 
 .columna{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.separador{
+    flex: 0 0 50%;
 }
 
 .juego{
 
     margin: 10px 20px 30px 20px;
-    width: 50%;
-    /* text-align: center; */
-
+    /* width: 50%; */
+    
 }
 
 .contenido{
 
-    flex-wrap: wrap; /*se visualiza el contenido en columnas */
     text-align: justify; /*justifica el texto */
+    border-style: dotted;
+    padding: 10px;
+    border-radius: 10px;
     
 }
 
 .contenido img{
 
-    width: 50%;
+    width: 80%;
     height: auto;
     margin-left: 20px;
     margin-right: 20px;
     max-width: 100%;
-    border-radius: 30px 30%;
+    border-radius: 30px;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
     
 }
 
@@ -112,15 +113,29 @@ footer{
 .imagenes{
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 15px;
 }
 
 .imagenhover:hover{
     opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
-    transform: scale(1.2); /* Hace que la imagen se agrande un poco */
+    transform: scale(1.1); /* Hace que la imagen se agrande un poco */
     transition: all 0.5s ease;
-    border-radius: 30% 30PX;
+    border-radius: 30px;
 }
 
 .descripcion{
     margin: 5% 2% 5% 2%;
+
+}
+
+@media (max-width: 800px) {
+    .separador {
+      flex: 0 0 100%;
+    }
+
+    .contenido img {
+
+        width: 80%;
+    }
 }
