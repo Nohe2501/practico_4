@@ -72,7 +72,7 @@ footer{
 
 .contenido{
 
-     /*justifica el texto */
+    text-align: justify;/*justifica el texto */
     border-style: dotted;
     padding: 10px;
     padding-bottom: 30px;
@@ -90,7 +90,6 @@ footer{
     border-radius: 30px;
     display: block;
     margin: 15px auto;
-    text-align: justify;
     
 }
 
