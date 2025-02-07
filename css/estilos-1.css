@@ -79,6 +79,11 @@ p{
 
 }
 
+.btn:hover{
+
+    background: #9c0041;
+}
+
 footer{
 
     background: #e96093;

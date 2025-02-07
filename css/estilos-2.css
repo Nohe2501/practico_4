@@ -65,15 +65,17 @@ footer{
 .juego{
 
     margin: 10px 20px 30px 20px;
+    padding-bottom: 50px;
     /* width: 50%; */
     
 }
 
 .contenido{
 
-    text-align: justify; /*justifica el texto */
+     /*justifica el texto */
     border-style: dotted;
     padding: 10px;
+    padding-bottom: 30px;
     border-radius: 10px;
     
 }
@@ -88,18 +90,40 @@ footer{
     border-radius: 30px;
     display: block;
     margin: 15px auto;
+    text-align: justify;
+    
+}
+
+.item img{
+
+    width: 30%;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+    border-radius: 30px;
+    display: flex;
+    margin: 5px auto;
     
 }
 
 .btn{
     background: black;
     padding: 10px;
-    border-radius: 100px;
+    border-radius: 20px;
     color: white;
     text-decoration: none;
-    margin: 5px auto;
-    display: block;
+    margin: 5px;
+    flex-wrap: wrap;
     width: fit-content;
+    border-style: double;
+    justify-content: end;
+}
+
+.btn:hover{
+
+    background: white;
+    color: black;
 }
 
 .negrita{
@@ -113,7 +137,7 @@ footer{
 .imagenes{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     margin-top: 15px;
 }
 
@@ -129,12 +153,22 @@ footer{
 
 }
 
+.precio{
+
+    color: aqua;
+}
+
 @media (max-width: 800px) {
     .separador {
       flex: 0 0 100%;
     }
 
     .contenido img {
+
+        width: 80%;
+    }
+
+    .item img{
 
         width: 80%;
     }
